@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilo.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= família= Roboto:wght@300;400;500;700 & display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>DrivenEats</title>
+  </head>
+  <body>
+    <div class="encaixe"></div>
+    <div class="topo">
+        <h1>DrivenEats</h1>
+        <h5>Sua comida em 6 minutos</h5>
+    </div>
+    <div class="menu">
+        <div class="menu-comida">
+            <h1>Primeiro, seu prato</h1>
+            <div class="container-comida pratos">
+                
+              <div onclick ="pratoSelection(this) " class="comida comida1">
+                <img src="./imagem/hamburguer.jpg">
+                <div>
+                    <h2>Hamburguer de Sirí</h2>
+                    <p class="descriçao">Direto da Fenda do Biquíni</p>
+                    <div class="preço">
+                        <p class="preço-numero">R$ 8,90</p>
+                    </div>
+                    <div class="checkmark">
+                        <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                    </div>
+                </div>
+              </div>
+              <div onclick="select('.container-comida', '.comida2')" class="comida comida2">
+                <img src="./imagem/garfield.webp">
+                <div>
+                    <h2>Lasanha do Garfield</h2>
+                    <p class="descriçao">"Não sou gordo. Sou é baixo para o meu peso"</p>
+                    <div class="preço">
+                        <p class="preço-numero">R$ 9,90</p>
+                    </div>
+                    <div class="checkmark">
+                        <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                    </div>
+                </div>
+              </div>
+              <div onclick="select('.container-comida', '.comida3')" class="comida comida3">
+                <img src="./imagem/ramen.jpg">
+                <div>
+                <h2>Ramen do Naruto</h2>
+                    <p class="descriçao">Esse é o jeito de ser ninja</p>
+                    <div class="preço">
+                        <p class="preço-numero">R$ 10,00</p>
+                    </div>
+                    <div class="checkmark">
+                        <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                    </div>
+                </div>
+              </div>
+              <div onclick="select('.container-comida', '.comida4')" class="comida comida4">
+                <img src="./imagem/ratatouille.jpg">
+                <div>
+                <h2>Ratatouille</h2>
+                    <p class="descriçao">Somos aquilo que comemos. Coma coisas boas!</p>
+                    <div class="preço">
+                        <p class="preço-numero">R$ 14,00</p>
+                    </div>
+                    <div class="checkmark">
+                        <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                    </div>
+                </div>
+              </div>
+              <div onclick="select('.container-comida', '.comida5')" class="comida comida5">
+                <img src="./imagem/espinafre.jpg">
+                <div>
+                    <h2>Espinafre do Popeye</h2>
+                        <p class="descriçao">"Sou forte até o fim com espinafre pra mim!"</p>
+                        <div class="preço">
+                            <p class="preço-numero">R$ 11,90</p>
+                        </div>
+                        <div class="checkmark">
+                            <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                        </div>
+                    </div>
+              </div>
+              <div onclick="select('.container-comida', '.comida6')" class="comida comida6">
+                <img src="./imagem/baozi.jpg">
+              <div>
+                <h2>Baozi</h2>
+                    <p class="descriçao">Direto do Kung Fu Panda!</p>
+                    <div class="preço">
+                        <p class="preço-numero">R$ 7,90</p>
+                    </div>
+                    <div class="checkmark">
+                        <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                    </div>
+                </div>      
+        </div>
+    </div>
+        <div class="menu-bebida">
+            <h1>Agora, sua bebida</h1>
+            <div class="container-bebida">
+
+                <div onclick="select('.container-bebida', '.bebida1')" class="bebida comida bebida1">
+                    <img src="./imagem/leite.jpg">
+                <div>
+                    <h2>Leite Cor de Rosa</h2>
+                        <p class="descriçao">Copo 300ml</p>
+                        <div class="preço">
+                            <p class="preço-numero">R$ 5,50</p>
+                        </div>
+                        <div class="checkmark">
+                            <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="select('.container-bebida', '.bebida2')" class="bebida comida bebid2">
+                    <img src="./imagem/hidromel.jpg">
+                <div>
+                    <h2>Hidromel Potter</h2>
+                        <p class="descriçao">Taça 200ml</p>
+                        <div class="preço">
+                            <p class="preço-numero">R$ 17,00</p>
+                        </div>
+                        <div class="checkmark">
+                            <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="select('.container-bebida', '.bebida3')" class="bebida comida bebida3">
+                    <img src="./imagem/martini.jpeg">
+                <div>
+                    <h2>Vesper Martini 007</h2>
+                        <p class="descriçao">Taça 200ml</p>
+                        <div class="preço">
+                            <p class="preço-numero">R$ 18,00</p>
+                        </div>
+                        <div class="checkmark">
+                            <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="select('.container-bebida', '.bebida4')" class="bebida comida bebida4">
+                    <img src="./imagem/cosmopolitan.webp">
+                <div>
+                    <h2>Cosmopolitan Sex and the City</h2>
+                        <p class="descriçao">Taça 200ml</p>
+                        <div class="preço">
+                            <p class="preço-numero">R$ 19,00</p>
+                        </div>
+                        <div class="checkmark">
+                            <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-sobremesa">
+            <h1>Por fim, sua sobremesa</h1>
+            <div class="container-sobremesa">
+
+                <div onclick="select('.container-sobremesa', '.sobremesa1')" class="sobremesa comida sobremesa1">
+                    <img src="./imagem/biscoito.jpg">
+                <div>
+                    <h2>Biscoito Gatinho</h2>
+                        <p class="descriçao">Apenas Biscoito</p>
+                        <div class="preço">
+                            <p class="preço-numero">R$ 7,00</p>
+                        </div>
+                        <div class="checkmark">
+                            <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="select('.container-sobremesa', '.sobremesa2')" class="sobremesa comida sobremesa2">
+                    <img src="./imagem/cookies.jpg">
+                <div>
+                    <h2>Cookie Alice</h2>
+                        <p class="descriçao">Apenas Cookie</p>
+                        <div class="preço">
+                            <p class="preço-numero">R$ 7,50</p>
+                        </div>
+                        <div class="checkmark">
+                            <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="select('.container-sobremesa', '.sobremesa3')" class="sobremesa comida sobremesa3">
+                    <img src="./imagem/donut.jpg">
+                <div>
+                    <h2>Donuts Simpsons</h2>
+                        <p class="descriçao">Apenas Donuts</p>
+                        <div class="preço">
+                            <p class="preço-numero">R$ 8,00</p>
+                        </div>
+                        <div class="checkmark">
+                            <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="select('.container-sobremesa', '.sobremesa4')" class="sobremesa comida sobremesa4">
+                    <img src="./imagem/creminho.png">
+                <div>
+                    <h2>Creminho Teletubies</h2>
+                        <p class="descriçao">Apenas Donuts</p>
+                        <div class="preço">
+                            <p class="preço-numero">R$ 6,00</p>
+                        </div>
+                        <div class="checkmark">
+                            <img src="./imagem/checkmark-circle-outline.svg" class="botao">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="bottom">
+        <div class="finalizar">
+            <button  onclick="click_button()" class="button" disabled></button><div class="paragrafo">Selecione os 3 itens para fechar o pedido</div>
+        </div>
+    </div>
+    <div class="encaixe"></div>
+    <script src=".script.js"></script>
+  </body>
+</html>
